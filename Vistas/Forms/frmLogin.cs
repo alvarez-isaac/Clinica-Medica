@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Vistas.Forms
 {
-    public partial class frmInicio : Form
+    public partial class frmLogin : Form
     {
-        public frmInicio()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -68,24 +68,35 @@ namespace Vistas.Forms
 
         private void btnIniciarSecion_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text != "USUARIO")// Verifica que el campo de usuario no tenga el texto por defecto (o sea que el usuario no haya escrito ususario)
+            if (txtUsuario.Text != "USUARIO")
             {
-                if (txtContraseña.Text != "CONTRASEÑA")// Verifica que el campo de contraseña no tenga el texto por defecto (o sea que el usuario no haya escrito contraseña)
+                if (txtContraseña.Text != "CONTRASEÑA")
                 {
-                    var user = new Usuarios(txtUsuario.Text, txtContraseña.Text);// Crea un nuevo objeto Usuario con los datos ingresados
+                    var user = new Usuarios(txtUsuario.Text, txtContraseña.Text);
 
-                    if (user.ValidarLogin())// Valida si kos datos son correctos 
+                    if (user.ValidarLogin())
                     {
-
-
-                        new frmInterfazAdmin().Show();//si lo es muestra la interfaz admin y cierra esta
-
-
+                        // Redirigir según el rol
+                        switch (user.IdRol)
+                        {
+                            case 1: // Administrador
+                                new frmInterfazAdmin().Show();
+                                break;
+                            case 2: // Médico
+                                new frmInterfazMedico().Show();
+                                break;
+                            case 3: // Recepcionista
+                                new frmInterfazRecepcionista().Show();
+                                break;
+                            default:
+                                msgError("Rol no válido");
+                                return;
+                        }
                         this.Hide();
                     }
                     else
                     {
-                        msgError("Usuario o contraseña incorrectos");//si no lo es muestra mensaje de error y limpia los campos
+                        msgError("Usuario o contraseña incorrectos");
                         txtContraseña.Clear();
                         txtUsuario.Clear();
                     }

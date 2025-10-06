@@ -46,61 +46,115 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Forms menu\frmCitas.cs">
+    <Compile Include="Forms\Administrador\frmCitas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Forms menu\frmCitas.Designer.cs">
+    <Compile Include="Forms\Administrador\frmCitas.Designer.cs">
       <DependentUpon>frmCitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Forms menu\frmDoctores.cs">
+    <Compile Include="Forms\Administrador\frmInterfazAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Forms menu\frmDoctores.Designer.cs">
+    <Compile Include="Forms\Administrador\frmInterfazAdmin.Designer.cs">
+      <DependentUpon>frmInterfazAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrador\frmDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrador\frmDoctores.Designer.cs">
       <DependentUpon>frmDoctores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Forms menu\frmEspecialidades.cs">
+    <Compile Include="Forms\Administrador\frmEspecialidades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Forms menu\frmEspecialidades.Designer.cs">
+    <Compile Include="Forms\Administrador\frmEspecialidades.Designer.cs">
       <DependentUpon>frmEspecialidades.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Forms menu\frmPacientes.cs">
+    <Compile Include="Forms\Administrador\frmPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Forms menu\frmPacientes.Designer.cs">
+    <Compile Include="Forms\Administrador\frmPacientes.Designer.cs">
       <DependentUpon>frmPacientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmInicio.cs">
+    <Compile Include="Forms\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmInicio.Designer.cs">
-      <DependentUpon>frmInicio.cs</DependentUpon>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmInterfazAdmin.cs">
+    <Compile Include="Forms\frmDashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmInterfazAdmin.Designer.cs">
-      <DependentUpon>frmInterfazAdmin.cs</DependentUpon>
+    <Compile Include="Forms\frmDashboardAdmin.Designer.cs">
+      <DependentUpon>frmDashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medico\frmCitasMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Medico\frmCitasMedico.Designer.cs">
+      <DependentUpon>frmCitasMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medico\frmInterfazMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Medico\frmInterfazMedico.Designer.cs">
+      <DependentUpon>frmInterfazMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recepcionista\frmCitasRecepcionista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recepcionista\frmCitasRecepcionista.Designer.cs">
+      <DependentUpon>frmCitasRecepcionista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recepcionista\frmInterfazRecepcionista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recepcionista\frmInterfazRecepcionista.Designer.cs">
+      <DependentUpon>frmInterfazRecepcionista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recepcionista\frmPacientesRecepcionista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recepcionista\frmPacientesRecepcionista.Designer.cs">
+      <DependentUpon>frmPacientesRecepcionista.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Forms menu\frmCitas.resx">
+    <EmbeddedResource Include="Forms\Administrador\frmCitas.resx">
       <DependentUpon>frmCitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Forms menu\frmDoctores.resx">
+    <EmbeddedResource Include="Forms\Administrador\frmInterfazAdmin.resx">
+      <DependentUpon>frmInterfazAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrador\frmDoctores.resx">
       <DependentUpon>frmDoctores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Forms menu\frmEspecialidades.resx">
+    <EmbeddedResource Include="Forms\Administrador\frmEspecialidades.resx">
       <DependentUpon>frmEspecialidades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Forms menu\frmPacientes.resx">
+    <EmbeddedResource Include="Forms\Administrador\frmPacientes.resx">
       <DependentUpon>frmPacientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmInicio.resx">
-      <DependentUpon>frmInicio.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmInterfazAdmin.resx">
-      <DependentUpon>frmInterfazAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmDashboardAdmin.resx">
+      <DependentUpon>frmDashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Medico\frmCitasMedico.resx">
+      <DependentUpon>frmCitasMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Medico\frmInterfazMedico.resx">
+      <DependentUpon>frmInterfazMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recepcionista\frmCitasRecepcionista.resx">
+      <DependentUpon>frmCitasRecepcionista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recepcionista\frmInterfazRecepcionista.resx">
+      <DependentUpon>frmInterfazRecepcionista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recepcionista\frmPacientesRecepcionista.resx">
+      <DependentUpon>frmPacientesRecepcionista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,5 +218,6 @@
   <ItemGroup>
     <None Include="Resources\icons8-mayores-50.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

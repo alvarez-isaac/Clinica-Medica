@@ -28,7 +28,6 @@ C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.Forms_menu.frmDoctores.resources
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.Forms_menu.frmEspecialidades.resources
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.Forms_menu.frmPacientes.resources
-C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.frmInicio.resources
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.frmInterfazAdmin.resources
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Properties.Resources.resources
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
@@ -36,3 +35,10 @@ C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.csproj
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.csproj.Up2Date
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.exe
 C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.pdb
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.frmLogin.resources
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.frmDashboardAdmin.resources
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.Forms_menu.frmCitasMedico.resources
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.frmInterfazMedico.resources
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.Forms_menu.frmCitasRecepcionista.resources
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.frmInterfazRecepcionista.resources
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Vistas\obj\Debug\Vistas.Forms.Forms_menu.frmPacientesRecepcionista.resources

@@ -1,6 +1,6 @@
 ﻿namespace Vistas.Forms
 {
-    partial class frmInterfazAdmin
+    partial class frmDashboardAdmin
     {
         /// <summary>
         /// Required designer variable.

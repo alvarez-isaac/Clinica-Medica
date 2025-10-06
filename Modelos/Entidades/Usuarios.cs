@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Modelos.Entidades
 {
@@ -20,7 +21,7 @@ namespace Modelos.Entidades
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public int IdRol { get => idRol; set => idRol = value; }
 
-        public Usuarios(string NombreUsuario, string password) // que inicializa el nombre y contraseña
+        public Usuarios(string NombreUsuario, string password)
         {
             nombreUsuario = NombreUsuario;
             contraseña = password;
@@ -28,22 +29,32 @@ namespace Modelos.Entidades
 
         public bool ValidarLogin()
         {
+            try
             {
                 SqlConnection conexion = ConexionDB.Conectar();
-                // Se define la consulta SQL que cuenta cuántos registros existen en la tabla Usuario
-                string query = "SELECT COUNT(*) FROM Usuario WHERE NombreUsuario = @usuario AND contraseña = @pass";
-                // donde el nombre de usuario y la clave coincidan con los ingresados
-                SqlCommand cmd = new SqlCommand(query, conexion);
-                // Se ejecuta el comando y se convierte el resultado a un número entero
+                // Modificamos la consulta para obtener el idRol
+                string query = "SELECT idUsuario, idRol FROM Usuarios WHERE nombreUsuario = @usuario AND contraseña = @pass";
 
+                SqlCommand cmd = new SqlCommand(query, conexion);
                 cmd.Parameters.AddWithValue("@usuario", NombreUsuario);
                 cmd.Parameters.AddWithValue("@pass", Contraseña);
-                // Esto devuelve cuántos registros coinciden que seréa 0 o 1
-                int count = Convert.ToInt32(cmd.ExecuteScalar());
-                // Si el conteo es mayor que 0, significa que hay un usuario válido (o seaq ue tenga la contra y user iguales), por lo tanto devuelve true
-                return count > 0;
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    // Guardamos el idRol del usuario
+                    this.IdRol = Convert.ToInt32(reader["idRol"]);
+                    this.IdUsuario = Convert.ToInt32(reader["idUsuario"]);
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al validar login: " + ex.Message);
+                return false;
             }
         }
-
     }
 }
