@@ -63,27 +63,6 @@ namespace Vistas.Forms
 
         #region
 
-        private void pnlPaciente_Click(object sender, EventArgs e)//abre forms clientes
-        {
-            if (Pacientes == null || Pacientes.IsDisposed)//Si el formulario Clientes es nulo muestra este formulario
-                Pacientes = new frmPacientes(); //envía a Abrir formulario, este formulario
-            //cerrar
-
-
-            AbrirFormulario(Pacientes);
-
-        }
-
-        private void pnlDoctores_Click(object sender, EventArgs e)//abre forms inventario
-        {
-            if (Doctores == null || Doctores.IsDisposed)//Si el formulario Clientes es nulo muestra este formulario
-                Doctores = new frmDoctores(); //envía a Abrir formulario, este formulario
-            //cerrar
-
-
-            AbrirFormulario(Doctores);
-        }
-
         private void pnlCitas_Click(object sender, EventArgs e)//abre forms Empleados
         {
             if (Citas == null || Citas.IsDisposed)//Si el formulario Clientes es nulo muestra este formulario
@@ -93,16 +72,8 @@ namespace Vistas.Forms
 
             AbrirFormulario(Citas);
         }
-        private void pnlEspecialidades_Click(object sender, EventArgs e)
-        {
-            if (Especialidades == null || Especialidades.IsDisposed)//Si el formulario Clientes es nulo muestra este formulario
-                Especialidades = new frmEspecialidades(); //envía a Abrir formulario, este formulario
-            //cerrar
-
-
-            AbrirFormulario(Especialidades);
-        }
 
         #endregion
+
     }
 }

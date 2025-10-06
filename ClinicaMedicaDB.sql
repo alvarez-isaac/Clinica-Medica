@@ -34,10 +34,14 @@ go
 create table Medicos (
   idMedico int identity (1,1) primary key,
   nombreMedico varchar(120) not null,
+  fechaNacimiento date,
+  numero int,
+  dui int,
   idUsuario int,
   constraint FKidUsuario foreign key (idUsuario) references Usuarios(idUsuario) on delete cascade
 );
 go
+
 
 create table Citas (
   idCita int identity(1,1) primary key,
@@ -51,6 +55,9 @@ create table Citas (
   foreign key (idEspecialidad) references Especialidades(idEspecialidad)
 );
 go
+
+select*from Citas
+
 insert into Roles (nombreRol) values 
 ('Administrador'),
 ('Médico'),
@@ -67,11 +74,40 @@ insert into Pacientes (nombrePaciente, Telefono) values
 ('Luis Rodríguez', '7456-7890');
 go
 
-insert into Medicos (nombreMedico, idUsuario) values
-('Dr. Carlos Hernández', 2);
+insert into Medicos values
+('Dr. Carlos Hernández','1925/12/25',74579867, 01007464, 2);
 go
-insert into Citas (idPaciente, idMedico, motivo, observaciones) values
-(1, 2, 'Chequeo general', 'Revisión de presión arterial y peso'),
-(2, 2, 'Dolor de cabeza', 'Se recomienda control de estrés y descanso'),
-(3, 2, 'Control anual', 'Paciente estable, sin complicaciones');
-select *from Citas
+
+select*from Medicos
+
+insert into Citas values
+(1, 1, 2, 'Chequeo general', 'Revisión de presión arterial y peso')
+
+CREATE VIEW VerDoctores AS
+SELECT 
+    m.idMedico,
+    m.nombreMedico as [Nombre del Médico],
+    m.fechaNacimiento as [Fecha de Nacimiento],
+    m.numero as [Número Telefónico],
+    m.dui as DUI,
+    r.nombreRol as Rol
+FROM Medicos m
+INNER JOIN Usuarios u ON m.idUsuario = u.idUsuario
+INNER JOIN Roles r ON u.idRol = r.idRol;
+go
+
+CREATE VIEW VerCitas AS
+SELECT 
+    c.idCita,
+    p.nombrePaciente as [Nombre del Paciente],
+    m.nombreMedico as [Nombre del Médico],
+    e.nombreEspecialidad as Especialidad,
+    c.motivo as [Motivo de Consulta],
+    c.observaciones as Observaciones
+FROM Citas c
+INNER JOIN Pacientes p ON c.idPaciente = p.idPaciente
+INNER JOIN Medicos m ON c.idMedico = m.idMedico
+LEFT JOIN Especialidades e ON c.idEspecialidad = e.idEspecialidad;
+go
+
+select*from VerCitas

@@ -47,40 +47,40 @@
             // dgvPacientes
             // 
             this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPacientes.Location = new System.Drawing.Point(372, 96);
+            this.dgvPacientes.Location = new System.Drawing.Point(45, 114);
             this.dgvPacientes.Name = "dgvPacientes";
             this.dgvPacientes.RowHeadersWidth = 51;
             this.dgvPacientes.RowTemplate.Height = 24;
-            this.dgvPacientes.Size = new System.Drawing.Size(240, 150);
+            this.dgvPacientes.Size = new System.Drawing.Size(497, 169);
             this.dgvPacientes.TabIndex = 0;
             this.dgvPacientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellClick);
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(372, 394);
+            this.txtTelefono.Location = new System.Drawing.Point(45, 449);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(240, 22);
+            this.txtTelefono.Size = new System.Drawing.Size(270, 24);
             this.txtTelefono.TabIndex = 1;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(372, 314);
+            this.txtNombre.Location = new System.Drawing.Point(45, 359);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(240, 22);
+            this.txtNombre.Size = new System.Drawing.Size(270, 24);
             this.txtNombre.TabIndex = 2;
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(916, 43);
+            this.txtBuscar.Location = new System.Drawing.Point(657, 54);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(100, 22);
+            this.txtBuscar.Size = new System.Drawing.Size(112, 24);
             this.txtBuscar.TabIndex = 3;
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(870, 393);
+            this.btnNuevo.Location = new System.Drawing.Point(605, 448);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.Size = new System.Drawing.Size(84, 26);
             this.btnNuevo.TabIndex = 4;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(738, 393);
+            this.btnCancelar.Location = new System.Drawing.Point(458, 448);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(84, 26);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(738, 314);
+            this.btnEliminar.Location = new System.Drawing.Point(458, 359);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(84, 26);
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(626, 313);
+            this.btnActualizar.Location = new System.Drawing.Point(332, 358);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(84, 26);
             this.btnActualizar.TabIndex = 7;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -118,9 +118,9 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(626, 393);
+            this.btnAgregar.Location = new System.Drawing.Point(332, 448);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(84, 26);
             this.btnAgregar.TabIndex = 8;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -128,9 +128,9 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(1056, 42);
+            this.btnBuscar.Location = new System.Drawing.Point(815, 53);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(84, 26);
             this.btnBuscar.TabIndex = 9;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -139,18 +139,18 @@
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(836, 49);
+            this.lblBuscar.Location = new System.Drawing.Point(567, 61);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(49, 16);
+            this.lblBuscar.Size = new System.Drawing.Size(55, 18);
             this.lblBuscar.TabIndex = 10;
             this.lblBuscar.Text = "Buscar";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(369, 282);
+            this.lblNombre.Location = new System.Drawing.Point(43, 323);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 16);
+            this.lblNombre.Size = new System.Drawing.Size(62, 18);
             this.lblNombre.TabIndex = 11;
             this.lblNombre.Text = "Nombre";
             this.lblNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -158,18 +158,18 @@
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(369, 364);
+            this.lblTelefono.Location = new System.Drawing.Point(43, 416);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(61, 16);
+            this.lblTelefono.Size = new System.Drawing.Size(66, 18);
             this.lblTelefono.TabIndex = 12;
             this.lblTelefono.Text = "Telefono";
             this.lblTelefono.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // frmPacientes
+            // frmPacientesRecepcionista
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1295, 619);
+            this.ClientSize = new System.Drawing.Size(915, 545);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblBuscar);
@@ -183,9 +183,10 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.dgvPacientes);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmPacientes";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmPacientesRecepcionista";
             this.Text = "frmPacientes";
             this.Load += new System.EventHandler(this.frmPacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();

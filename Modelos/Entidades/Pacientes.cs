@@ -174,5 +174,16 @@ namespace ClinicaMedica.Models
                 return null;
             }
         }
+
+        public static DataTable tipoPacientes()
+        {
+            SqlConnection conexion = ConexionDB.Conectar();
+            string consultaEstado = "select idPaciente, nombrePaciente from Pacientes\r\n";
+            SqlDataAdapter ada = new SqlDataAdapter(consultaEstado, conexion);
+            DataTable carcarEstadoTabla = new DataTable();
+            ada.Fill(carcarEstadoTabla);
+            return carcarEstadoTabla;
+
+        }
     }
 }

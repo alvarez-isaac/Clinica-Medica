@@ -30,13 +30,13 @@
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PanelForms = new System.Windows.Forms.Panel();
             this.pnlMenulateral = new System.Windows.Forms.Panel();
             this.pnlCitas = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pbClientes = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlBotonesInterfaz = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.PanelForms = new System.Windows.Forms.Panel();
             this.pnlFormularios = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,8 +49,8 @@
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlMenu.Controls.Add(this.pictureBox1);
             this.pnlMenu.Controls.Add(this.PanelForms);
+            this.pnlMenu.Controls.Add(this.pictureBox1);
             this.pnlMenu.Controls.Add(this.pnlMenulateral);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -70,22 +70,13 @@
             this.pictureBox1.TabIndex = 53;
             this.pictureBox1.TabStop = false;
             // 
-            // PanelForms
-            // 
-            this.PanelForms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PanelForms.Location = new System.Drawing.Point(219, 47);
-            this.PanelForms.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.PanelForms.Name = "PanelForms";
-            this.PanelForms.Size = new System.Drawing.Size(967, 504);
-            this.PanelForms.TabIndex = 51;
-            // 
             // pnlMenulateral
             // 
             this.pnlMenulateral.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlMenulateral.Controls.Add(this.pnlCitas);
             this.pnlMenulateral.Location = new System.Drawing.Point(0, 99);
             this.pnlMenulateral.Name = "pnlMenulateral";
-            this.pnlMenulateral.Size = new System.Drawing.Size(217, 401);
+            this.pnlMenulateral.Size = new System.Drawing.Size(271, 454);
             this.pnlMenulateral.TabIndex = 54;
             // 
             // pnlCitas
@@ -95,9 +86,9 @@
             this.pnlCitas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlCitas.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCitas.Location = new System.Drawing.Point(0, 0);
-            this.pnlCitas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlCitas.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCitas.Name = "pnlCitas";
-            this.pnlCitas.Size = new System.Drawing.Size(217, 51);
+            this.pnlCitas.Size = new System.Drawing.Size(271, 51);
             this.pnlCitas.TabIndex = 0;
             this.pnlCitas.Click += new System.EventHandler(this.pnlCitas_Click);
             // 
@@ -120,12 +111,21 @@
             this.pbClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbClientes.Image = global::Vistas.Properties.Resources.icons8_citas_50;
             this.pbClientes.Location = new System.Drawing.Point(6, 6);
-            this.pbClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbClientes.Margin = new System.Windows.Forms.Padding(2);
             this.pbClientes.Name = "pbClientes";
             this.pbClientes.Size = new System.Drawing.Size(38, 41);
             this.pbClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbClientes.TabIndex = 41;
             this.pbClientes.TabStop = false;
+            // 
+            // pnlBotonesInterfaz
+            // 
+            this.pnlBotonesInterfaz.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlBotonesInterfaz.Location = new System.Drawing.Point(819, 0);
+            this.pnlBotonesInterfaz.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlBotonesInterfaz.Name = "pnlBotonesInterfaz";
+            this.pnlBotonesInterfaz.Size = new System.Drawing.Size(152, 49);
+            this.pnlBotonesInterfaz.TabIndex = 28;
             // 
             // panel1
             // 
@@ -134,19 +134,19 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.pnlBotonesInterfaz);
             this.panel1.Location = new System.Drawing.Point(274, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(971, 49);
             this.panel1.TabIndex = 53;
             // 
-            // pnlBotonesInterfaz
+            // PanelForms
             // 
-            this.pnlBotonesInterfaz.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlBotonesInterfaz.Location = new System.Drawing.Point(819, 0);
-            this.pnlBotonesInterfaz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pnlBotonesInterfaz.Name = "pnlBotonesInterfaz";
-            this.pnlBotonesInterfaz.Size = new System.Drawing.Size(152, 49);
-            this.pnlBotonesInterfaz.TabIndex = 28;
+            this.PanelForms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PanelForms.Location = new System.Drawing.Point(271, 2);
+            this.PanelForms.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelForms.Name = "PanelForms";
+            this.PanelForms.Size = new System.Drawing.Size(915, 548);
+            this.PanelForms.TabIndex = 51;
             // 
             // pnlFormularios
             // 
@@ -183,13 +183,13 @@
 
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel PanelForms;
         private System.Windows.Forms.Panel pnlMenulateral;
         private System.Windows.Forms.Panel pnlCitas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pbClientes;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlBotonesInterfaz;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PanelForms;
         private System.Windows.Forms.Panel pnlFormularios;
     }
 }

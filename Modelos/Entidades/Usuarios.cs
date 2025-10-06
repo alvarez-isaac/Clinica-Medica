@@ -1,6 +1,7 @@
 ﻿using Modelos.Conexion;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -55,6 +56,17 @@ namespace Modelos.Entidades
                 MessageBox.Show("Error al validar login: " + ex.Message);
                 return false;
             }
+        }
+
+        public static DataTable tipoUsuarios()
+        {
+            SqlConnection conexion = ConexionDB.Conectar();
+            string consultaEstado = "select idUsuario, nombreUsuario from Usuarios\r\n";
+            SqlDataAdapter ada = new SqlDataAdapter(consultaEstado, conexion);
+            DataTable carcarEstadoTabla = new DataTable();
+            ada.Fill(carcarEstadoTabla);
+            return carcarEstadoTabla;
+
         }
     }
 }

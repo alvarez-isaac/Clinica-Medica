@@ -142,5 +142,16 @@ namespace ClinicaMedica.Models
                 return null;
             }
         }
+
+        public static DataTable tipoEspecialidad()
+        {
+            SqlConnection conexion = ConexionDB.Conectar();
+            string consultaEstado = "select idEspecialidad, nombreEspecialidad from Especialidades\r\n";
+            SqlDataAdapter ada = new SqlDataAdapter(consultaEstado, conexion);
+            DataTable carcarEstadoTabla = new DataTable();
+            ada.Fill(carcarEstadoTabla);
+            return carcarEstadoTabla;
+
+        }
     }
 }

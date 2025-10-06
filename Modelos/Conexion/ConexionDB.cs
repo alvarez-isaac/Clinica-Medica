@@ -10,7 +10,7 @@ namespace Modelos.Conexion
 {
     public class ConexionDB
     {
-        private static string servidor = "localhost";
+        private static string servidor = "LAPTOP-KN78UST4\\SQLEXPRESS";
         private static string dataBase = "ClinicaMedica";
 
         public static SqlConnection Conectar()

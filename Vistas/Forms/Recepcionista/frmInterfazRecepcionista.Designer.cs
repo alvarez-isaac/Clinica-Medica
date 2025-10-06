@@ -50,6 +50,7 @@
             this.pnlPacientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInvrentario)).BeginInit();
             this.panel1.SuspendLayout();
+            this.pnlFormularios.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -79,10 +80,10 @@
             // PanelForms
             // 
             this.PanelForms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PanelForms.Location = new System.Drawing.Point(219, 47);
-            this.PanelForms.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelForms.Location = new System.Drawing.Point(276, 47);
+            this.PanelForms.Margin = new System.Windows.Forms.Padding(2);
             this.PanelForms.Name = "PanelForms";
-            this.PanelForms.Size = new System.Drawing.Size(967, 504);
+            this.PanelForms.Size = new System.Drawing.Size(910, 504);
             this.PanelForms.TabIndex = 51;
             // 
             // pnlMenulateral
@@ -92,7 +93,7 @@
             this.pnlMenulateral.Controls.Add(this.pnlPacientes);
             this.pnlMenulateral.Location = new System.Drawing.Point(0, 99);
             this.pnlMenulateral.Name = "pnlMenulateral";
-            this.pnlMenulateral.Size = new System.Drawing.Size(217, 401);
+            this.pnlMenulateral.Size = new System.Drawing.Size(271, 454);
             this.pnlMenulateral.TabIndex = 54;
             // 
             // pnlCitas
@@ -102,9 +103,9 @@
             this.pnlCitas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlCitas.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCitas.Location = new System.Drawing.Point(0, 51);
-            this.pnlCitas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlCitas.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCitas.Name = "pnlCitas";
-            this.pnlCitas.Size = new System.Drawing.Size(217, 51);
+            this.pnlCitas.Size = new System.Drawing.Size(271, 51);
             this.pnlCitas.TabIndex = 0;
             this.pnlCitas.Click += new System.EventHandler(this.pnlCitas_Click);
             // 
@@ -127,7 +128,7 @@
             this.pbClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbClientes.Image = global::Vistas.Properties.Resources.icons8_citas_50;
             this.pbClientes.Location = new System.Drawing.Point(6, 6);
-            this.pbClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbClientes.Margin = new System.Windows.Forms.Padding(2);
             this.pbClientes.Name = "pbClientes";
             this.pbClientes.Size = new System.Drawing.Size(38, 41);
             this.pbClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -136,25 +137,24 @@
             // 
             // pnlPacientes
             // 
-            this.pnlPacientes.Controls.Add(this.pnlForms);
             this.pnlPacientes.Controls.Add(this.pbInvrentario);
             this.pnlPacientes.Controls.Add(this.lblPacientes);
             this.pnlPacientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlPacientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPacientes.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.pnlPacientes.Location = new System.Drawing.Point(0, 0);
-            this.pnlPacientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPacientes.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPacientes.Name = "pnlPacientes";
-            this.pnlPacientes.Size = new System.Drawing.Size(217, 51);
+            this.pnlPacientes.Size = new System.Drawing.Size(271, 51);
             this.pnlPacientes.TabIndex = 2;
             this.pnlPacientes.Click += new System.EventHandler(this.pnlPaciente_Click);
             // 
             // pnlForms
             // 
-            this.pnlForms.Location = new System.Drawing.Point(219, 34);
-            this.pnlForms.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlForms.Location = new System.Drawing.Point(2, 79);
+            this.pnlForms.Margin = new System.Windows.Forms.Padding(2);
             this.pnlForms.Name = "pnlForms";
-            this.pnlForms.Size = new System.Drawing.Size(969, 418);
+            this.pnlForms.Size = new System.Drawing.Size(915, 548);
             this.pnlForms.TabIndex = 52;
             // 
             // pbInvrentario
@@ -162,7 +162,7 @@
             this.pbInvrentario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbInvrentario.Image = global::Vistas.Properties.Resources.icons8_pacientes_642;
             this.pbInvrentario.Location = new System.Drawing.Point(4, 4);
-            this.pbInvrentario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbInvrentario.Margin = new System.Windows.Forms.Padding(2);
             this.pbInvrentario.Name = "pbInvrentario";
             this.pbInvrentario.Size = new System.Drawing.Size(44, 41);
             this.pbInvrentario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -189,7 +189,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.pnlBotonesInterfaz);
             this.panel1.Location = new System.Drawing.Point(274, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(971, 49);
             this.panel1.TabIndex = 53;
@@ -198,13 +198,14 @@
             // 
             this.pnlBotonesInterfaz.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlBotonesInterfaz.Location = new System.Drawing.Point(819, 0);
-            this.pnlBotonesInterfaz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBotonesInterfaz.Margin = new System.Windows.Forms.Padding(2);
             this.pnlBotonesInterfaz.Name = "pnlBotonesInterfaz";
             this.pnlBotonesInterfaz.Size = new System.Drawing.Size(152, 49);
             this.pnlBotonesInterfaz.TabIndex = 28;
             // 
             // pnlFormularios
             // 
+            this.pnlFormularios.Controls.Add(this.pnlForms);
             this.pnlFormularios.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlFormularios.Location = new System.Drawing.Point(271, -76);
             this.pnlFormularios.Name = "pnlFormularios";
@@ -232,6 +233,7 @@
             this.pnlPacientes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInvrentario)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.pnlFormularios.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
