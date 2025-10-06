@@ -20,6 +20,7 @@ CREATE TABLE Usuarios (
   idUsuario INT IDENTITY(1,1) PRIMARY KEY,
   nombreUsuario VARCHAR(50) NOT NULL UNIQUE,
   contraseña VARCHAR(100) NOT NULL,
+  correo varchar(100),
   idRol int,
   constraint FKidRol FOREIGN KEY (idRol) REFERENCES Roles(idRol) on delete cascade,
 );
@@ -63,10 +64,10 @@ insert into Roles (nombreRol) values
 ('Médico'),
 ('Recepcionista');
 go
-insert into Usuarios (nombreUsuario, contraseña, idRol) values
-('admin', '123', 1),
-('doctor', '123', 2),
-('recepcion', '123', 3);
+insert into Usuarios values
+('admin', '123','kike@gmail.com', 1),
+('doctor', '123','mugly@gmail.com', 2),
+('recepcion', '123','sonic@gmail.com', 3);
 go
 insert into Pacientes (nombrePaciente, Telefono) values
 ('Juan Pérez', '7890-1234'),
@@ -89,12 +90,11 @@ SELECT
     m.nombreMedico as [Nombre del Médico],
     m.fechaNacimiento as [Fecha de Nacimiento],
     m.numero as [Número Telefónico],
-    m.dui as DUI,
-    r.nombreRol as Rol
+    m.dui as DUI
 FROM Medicos m
 INNER JOIN Usuarios u ON m.idUsuario = u.idUsuario
-INNER JOIN Roles r ON u.idRol = r.idRol;
 go
+
 
 CREATE VIEW VerCitas AS
 SELECT 

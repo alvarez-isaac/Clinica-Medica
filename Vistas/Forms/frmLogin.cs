@@ -54,16 +54,6 @@ namespace Vistas.Forms
             }
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Close();// Cierra el formulario
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized; // minimiza el formulario
-        }
-
 
 
         private void btnIniciarSecion_Click(object sender, EventArgs e)

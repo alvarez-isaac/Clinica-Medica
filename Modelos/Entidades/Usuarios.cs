@@ -15,18 +15,21 @@ namespace Modelos.Entidades
         private int idUsuario;
         private string nombreUsuario;
         private string contraseña;
+        private string correo;
         private int idRol;
 
         public int IdUsuario { get => idUsuario; set => idUsuario = value; }
         public string NombreUsuario { get => nombreUsuario; set => nombreUsuario = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public int IdRol { get => idRol; set => idRol = value; }
+        public string Correo { get => correo; set => correo = value; }
 
         public Usuarios(string NombreUsuario, string password)
         {
             nombreUsuario = NombreUsuario;
             contraseña = password;
         }
+
 
         public bool ValidarLogin()
         {
@@ -58,6 +61,17 @@ namespace Modelos.Entidades
             }
         }
 
+        public static DataTable cargarRoles()
+        {
+            SqlConnection conexion = ConexionDB.Conectar();
+            string querycargar = "select idRol, nombreRol from Roles\r\n";
+            SqlDataAdapter ada = new SqlDataAdapter(querycargar, conexion);
+            DataTable cargarRolTabla = new DataTable();
+            ada.Fill(cargarRolTabla);
+            return cargarRolTabla;
+        }
+
+
         public static DataTable tipoUsuarios()
         {
             SqlConnection conexion = ConexionDB.Conectar();
@@ -67,6 +81,27 @@ namespace Modelos.Entidades
             ada.Fill(carcarEstadoTabla);
             return carcarEstadoTabla;
 
+        }
+
+        public bool RegistrarUsuario()
+        {
+            try
+            {
+                SqlConnection conexion = ConexionDB.Conectar();
+                string query = "INSERT INTO Usuarios (nombreUsuario, contraseña, idRol) VALUES (@nombreUsuario, @contraseña, @idRol)";
+
+                SqlCommand cmd = new SqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@nombreUsuario", NombreUsuario);
+                cmd.Parameters.AddWithValue("@contraseña", Contraseña);
+                cmd.Parameters.AddWithValue("@idRol", IdRol);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar usuario: " + ex.Message);
+                return false;
+            }
         }
     }
 }

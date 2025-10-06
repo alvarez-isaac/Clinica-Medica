@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Gabst\\Desktop\\Clinica-Medica\\",
+  "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|c:\\users\\gabst\\desktop\\clinica-medica\\vistas\\forms\\administrador\\frmcitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|solutionrelative:vistas\\forms\\administrador\\frmcitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\clinica-medica\\vistas\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|solutionrelative:vistas\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E140FB6-D564-4E78-A68F-4E2AC7DABAFD}|Modelos\\Modelos.csproj|c:\\users\\estudiante\\desktop\\clinica-medica\\modelos\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E140FB6-D564-4E78-A68F-4E2AC7DABAFD}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\clinica-medica\\vistas\\forms\\administrador\\frmregistrarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|solutionrelative:vistas\\forms\\administrador\\frmregistrarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\clinica-medica\\vistas\\forms\\administrador\\frmregistrarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|solutionrelative:vistas\\forms\\administrador\\frmregistrarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\clinica-medica\\vistas\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F6FB2B8E-F72D-42AA-A4A3-05706DF80D76}|Vistas\\Vistas.csproj|solutionrelative:vistas\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +30,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmCitas.cs",
-              "DocumentMoniker": "C:\\Users\\Gabst\\Desktop\\Clinica-Medica\\Vistas\\Forms\\Administrador\\frmCitas.cs",
-              "RelativeDocumentMoniker": "Vistas\\Forms\\Administrador\\frmCitas.cs",
-              "ToolTip": "C:\\Users\\Gabst\\Desktop\\Clinica-Medica\\Vistas\\Forms\\Administrador\\frmCitas.cs",
-              "RelativeToolTip": "Vistas\\Forms\\Administrador\\frmCitas.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAiwIwAAAA9AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frmRegistrarUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Vistas\\Forms\\Administrador\\frmRegistrarUsuarios.cs",
+              "RelativeDocumentMoniker": "Vistas\\Forms\\Administrador\\frmRegistrarUsuarios.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Vistas\\Forms\\Administrador\\frmRegistrarUsuarios.cs",
+              "RelativeToolTip": "Vistas\\Forms\\Administrador\\frmRegistrarUsuarios.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAjwCEAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T05:06:03.475Z",
+              "WhenOpened": "2025-10-06T17:03:39.436Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Modelos\\Entidades\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Modelos\\Entidades\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Modelos\\Entidades\\Usuarios.cs",
+              "RelativeToolTip": "Modelos\\Entidades\\Usuarios.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T17:00:58.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Vistas\\Forms\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Vistas\\Forms\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Vistas\\Forms\\frmLogin.cs",
+              "RelativeToolTip": "Vistas\\Forms\\frmLogin.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAArwEwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:59:42.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmRegistrarUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Vistas\\Forms\\Administrador\\frmRegistrarUsuarios.cs",
+              "RelativeDocumentMoniker": "Vistas\\Forms\\Administrador\\frmRegistrarUsuarios.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Vistas\\Forms\\Administrador\\frmRegistrarUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Forms\\Administrador\\frmRegistrarUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:54:14.849Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Vistas\\Forms\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Vistas\\Forms\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Clinica-Medica\\Vistas\\Forms\\frmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Forms\\frmLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:59:37.572Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

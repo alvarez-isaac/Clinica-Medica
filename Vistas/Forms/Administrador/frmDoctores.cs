@@ -28,7 +28,6 @@ namespace Vistas.Forms.Forms_menu
             txtNombre.MaxLength = 50;
             txtDui.MaxLength = 9;
             txtNumero.MaxLength = 8;
-            tipoUsuario();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -61,7 +60,6 @@ namespace Vistas.Forms.Forms_menu
             med.Dui = int.Parse(txtDui.Text);
             med.Numero = int.Parse(txtNumero.Text);
             med.fechaNacimiento = dtpNacimiento.Value;
-            med.idUsuario = Convert.ToInt32(cmbUsuario.SelectedValue);
             med.Actualizar();
             MessageBox.Show("La informacion del Medico ha sido actualizada");
             dgvMedicos.DataSource = med.Listar();
@@ -72,17 +70,6 @@ namespace Vistas.Forms.Forms_menu
             txtDui.Clear();
             txtNumero.Clear();
             txtNombre.Clear();
-            cmbUsuario.SelectedIndex = -1;
-        }
-
-        private void tipoUsuario()
-        {
-            cmbUsuario.DataSource = null;
-            cmbUsuario.DataSource = Usuarios.tipoUsuarios();
-
-            cmbUsuario.DisplayMember = "nombreUsuario";
-            cmbUsuario.ValueMember = "idUsuario";
-            cmbUsuario.SelectedIndex = -1;
         }
 
         private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
