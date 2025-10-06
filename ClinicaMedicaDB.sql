@@ -1,35 +1,77 @@
-create database ClinicaMedica
-go
+CREATE DATABASE ClinicaMedica;
+GO
+USE ClinicaMedica;
+GO
 
-use ClinicaMedica
-go
-
-create table Roles(
-    idRol INT PRIMARY KEY IDENTITY(1,1),
-    nombreRol NVARCHAR(50) NOT NULL
+-- Roles
+CREATE TABLE Roles (
+  idRol INT IDENTITY(1,1) PRIMARY KEY,
+  nombreRol VARCHAR(50) NOT NULL UNIQUE
 );
-
-insert into Roles values ('Recepcionista'),('Medico'),('Administrador')
-
+go
 create table Especialidades(
-idEspecialudad int primary key identity(1,1),
+idEspecialidad int primary key identity(1,1),
 nombreEspecialidad varchar(50),
 );
-
+go
 insert into Especialidades values ('Medicina General'),('Cardiología'),('Urología'),('Endocrinología'),('Reumatología'),('Oncología'),('Neurología');
-
-CREATE TABLE Usuario (
-    idUsuario INT PRIMARY KEY IDENTITY(1,1),
-    nombreUsuario NVARCHAR(50) UNIQUE NOT NULL,
-    contraseña NVARCHAR(100),
-    idRol INT,
-    constraint FKIdRol FOREIGN KEY (idRol) REFERENCES Roles(idRol) on delete cascade,
+go
+CREATE TABLE Usuarios (
+  idUsuario INT IDENTITY(1,1) PRIMARY KEY,
+  nombreUsuario VARCHAR(50) NOT NULL UNIQUE,
+  contraseña VARCHAR(100) NOT NULL,
+  idRol int,
+  constraint FKidRol FOREIGN KEY (idRol) REFERENCES Roles(idRol) on delete cascade,
+);
+go
+CREATE TABLE Pacientes (
+  idPaciente INT IDENTITY(1,1) PRIMARY KEY,
+  nombrePaciente VARCHAR(120) NOT NULL,
+  Telefono VARCHAR(25) NULL,
 );
 go
 
-insert into Usuario (nombreUsuario, contraseña, idRol) values
-('carlos roberto', '123', 3),  -- Administrador
-('adriana hasbun', '123', 2),    -- Médico
-('juan pablo', '123', 1),    -- Recepcionista
-('sofia melendez', '123', 2),    -- Médico
-('pedro porro', '123', 3);   -- Administrador
+create table Medicos (
+  idMedico int identity (1,1) primary key,
+  nombreMedico varchar(120) not null,
+  idUsuario int,
+  constraint FKidUsuario foreign key (idUsuario) references Usuarios(idUsuario) on delete cascade
+);
+go
+
+create table Citas (
+  idCita int identity(1,1) primary key,
+  idPaciente int not null,
+  idMedico int not null,
+  idEspecialidad int,
+  motivo varchar (100) not null,
+  observaciones varchar(500),
+  foreign key (idPaciente) references Pacientes(idPaciente),
+  foreign key (idMedico) references Medicos(idMedico),
+  foreign key (idEspecialidad) references Especialidades(idEspecialidad)
+);
+go
+insert into Roles (nombreRol) values 
+('Administrador'),
+('Médico'),
+('Recepcionista');
+go
+insert into Usuarios (nombreUsuario, contraseña, idRol) values
+('admin', '123', 1),
+('doctor', '123', 2),
+('recepcion', '123', 3);
+go
+insert into Pacientes (nombrePaciente, Telefono) values
+('Juan Pérez', '7890-1234'),
+('María Gómez', '7123-4567'),
+('Luis Rodríguez', '7456-7890');
+go
+
+insert into Medicos (nombreMedico, idUsuario) values
+('Dr. Carlos Hernández', 2);
+go
+insert into Citas (idPaciente, idMedico, motivo, observaciones) values
+(1, 2, 'Chequeo general', 'Revisión de presión arterial y peso'),
+(2, 2, 'Dolor de cabeza', 'Se recomienda control de estrés y descanso'),
+(3, 2, 'Control anual', 'Paciente estable, sin complicaciones');
+select *from Citas

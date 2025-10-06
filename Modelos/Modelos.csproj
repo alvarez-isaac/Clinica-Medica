@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\ConexionDB.cs" />
+    <Compile Include="Entidades\Especialidades.cs" />
+    <Compile Include="Entidades\Pacientes.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

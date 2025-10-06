@@ -4,3 +4,9 @@ C:\Users\Gabst\Desktop\Clinica Medica\Modelos\obj\Debug\Modelos.csproj.AssemblyR
 C:\Users\Gabst\Desktop\Clinica Medica\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
 C:\Users\Gabst\Desktop\Clinica Medica\Modelos\obj\Debug\Modelos.dll
 C:\Users\Gabst\Desktop\Clinica Medica\Modelos\obj\Debug\Modelos.pdb
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Modelos\bin\Debug\Modelos.dll
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Modelos\bin\Debug\Modelos.pdb
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Modelos\obj\Debug\Modelos.dll
+C:\Users\xfern\OneDrive\Escritorio\Clinica-Medica\Modelos\obj\Debug\Modelos.pdb
